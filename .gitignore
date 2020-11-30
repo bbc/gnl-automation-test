@@ -1,11 +1,6 @@
-node_modules/
 .idea/
 dist
-npm-debug.log
 /e2e/cypress/screenshots/
 /e2e/cypress/videos/
 /e2e/test-results/
 /test-results/
-yarn.lock
-yarn-error.log
-package-lock.json
