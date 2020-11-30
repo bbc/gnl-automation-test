@@ -6,8 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/around-the-bbc",
-        glue = "com.bbc.selenium.steps",
-        plugin = {"de.monochromata.cucumber.report.PrettyReports:target/report"})
+        glue = "com.bbc.selenium.steps")
 
 public class AroundTheBBCTest {
 }

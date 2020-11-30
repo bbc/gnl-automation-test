@@ -7,12 +7,13 @@ com/bbc/selenium/steps/generic/DomesticDisclaimerSteps.class
 com/bbc/selenium/pages/pwa/WorklifeIndexPage.class
 com/bbc/selenium/tests/AroundTheBBCTest.class
 com/bbc/selenium/steps/pwa/FutureIndexSteps.class
+com/bbc/selenium/pages/aroundthebbc/AroundTheBBCPage.class
 com/bbc/selenium/steps/generic/ReSizeWindowSteps.class
 com/bbc/selenium/pages/pwa/PWAIndexPage.class
 com/bbc/selenium/steps/generic/PrivacyPolicySteps.class
 com/bbc/selenium/pages/generic/DomesticDisclaimerPage.class
 com/bbc/selenium/utility/AssertUtility.class
+com/bbc/selenium/steps/aroundthebbc/AroundTheBBCSteps.class
 com/bbc/selenium/steps/pwa/WorklifeIndexSteps.class
 com/bbc/selenium/steps/generic/DriverSteps.class
-com/bbc/selenium/tests/NavigationTest.class
 com/bbc/selenium/steps/pwa/PremiumCollectionIndexSteps.class
