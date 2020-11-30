@@ -4,7 +4,10 @@ import com.bbc.selenium.utility.ScenarioContext;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class AroundTheBBCSteps {
 
@@ -27,17 +30,18 @@ public class AroundTheBBCSteps {
 
     @When("^I scroll to the footer$")
     public void scrollToFooter() {
-
+        JavascriptExecutor js = (JavascriptExecutor) scenarioContext.getDriver();
+        js.executeScript("window.scrollBy(0, 10000)");
     }
 
     @Then("^the around the bbc section is present$")
     public void assertSectionPresent() {
-
+        Assert.assertTrue("More button not visible", scenarioContext.getDriver().findElement(By.className("around-the-bbc-swimlane")).isDisplayed());
     }
 
     @Then("^I check link (.*) on the around the bbc module works correctly$")
     public void assertLinkWorks(int link) {
-
+        scenarioContext.getDriver().findElements(By.className("swimlane__items")).get(link - 1).click();
     }
 
     @Then("^I close the browser$")
