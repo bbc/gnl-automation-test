@@ -4,3 +4,4 @@ dist
 /e2e/cypress/videos/
 /e2e/test-results/
 /test-results/
+/target
