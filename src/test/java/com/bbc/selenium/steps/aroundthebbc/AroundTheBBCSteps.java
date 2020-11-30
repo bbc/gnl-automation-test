@@ -17,7 +17,7 @@ public class AroundTheBBCSteps {
 
     @Given("I resize the window to (\\d+) x (\\d+)$")
     public void thisIsATest(int x, int y) {
-        scenarioContext.getDriver()...
+//        scenarioContext.getDriver()...
     }
 
     @Given("^I navigate to the future index page$")
