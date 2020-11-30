@@ -1,0 +1,26 @@
+{
+  "name": "bbc-gnl-pwa",
+  "version": "1.5.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "cypress:dev": "cd e2e && cypress open",
+    "test:cypress:liveenv:dev": "CYPRESS_env=live CYPRESS_baseUrl=https://www.bbc.com yarn run cypress:dev"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "test-results/cypress"
+    }
+  },
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^1.14.0",
+    "cypress": "3.8.3",
+    "cypress-cucumber-preprocessor": "^2.0.1"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
