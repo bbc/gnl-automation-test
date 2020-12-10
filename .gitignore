@@ -5,3 +5,4 @@ dist
 /e2e/test-results/
 /test-results/
 /target
+/node_modules
