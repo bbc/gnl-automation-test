@@ -36,12 +36,13 @@ public class AroundTheBBCSteps {
 
     @Then("^the around the bbc section is present$")
     public void assertSectionPresent() {
-        Assert.assertTrue("More button not visible", scenarioContext.getDriver().findElement(By.className("around-the-bbc-swimlane")).isDisplayed());
+        Assert.assertTrue("Around the BBC section not visible", scenarioContext.getDriver().findElement(By.className("around-the-bbc-swimlane")).isDisplayed());
     }
 
     @Then("^I check link (.*) on the around the bbc module works correctly$")
     public void assertLinkWorks(int link) {
-        scenarioContext.getDriver().findElements(By.className("swimlane__items")).get(link - 1).click();
+        scenarioContext.getDriver().findElement(By.className("around-the-bbc-swimlane"))
+                .findElements(By.className("swimlane__item")).get(link - 1).click();
     }
 
     @Then("^I close the browser$")
